@@ -1,0 +1,17 @@
+h1 {
+    color: rgb(248, 59, 59);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    transition: all .5s;
+
+  }
+
+  body {
+    height: 100vh;
+    color: #1f1f1f;
+    background: linear-gradient(to bottom, #bada55, #c0ffee);
+  }
+
+  p{
+    color:rgb(158, 42, 42);
+
+  }

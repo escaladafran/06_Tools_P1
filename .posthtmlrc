@@ -1,0 +1,9 @@
+{
+  
+    "plugins": {
+      "posthtml-include": {},
+      "posthtml-doctype": { "doctype": "HTML 5" }
+
+    }
+  
+}
