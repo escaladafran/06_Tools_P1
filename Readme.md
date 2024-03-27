@@ -242,6 +242,21 @@ con el siguiente contenido
 
 
 #### 3. Creación del repositorio Git
+
+```
+…or create a new repository on the command line
+
+git init
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/escaladafran/06_Tools_P1.git
+git push -u origin main
+```
+
+
+luego añadir info del netlify
+
+
 #### 4. Adecuación a la temática y estructura de la práctica
 #### 5. Diseño responsive, complejidad y estética
 #### 6. Semántica y accesibilidad
