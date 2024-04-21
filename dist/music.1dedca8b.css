@@ -1,0 +1,64 @@
+@import "https://fonts.googleapis.com/css2?family=Ultra&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Orelega+One&family=Tilt+Warp&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap";
+*, :before, :after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.home {
+  background-color: #75a39f;
+}
+
+.music {
+  background-color: #f5efe5;
+}
+
+.footer {
+  background-color: #323232;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 95px;
+  margin-top: auto;
+  display: flex;
+}
+
+.footer__icons {
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-block-end: 10px;
+  padding-top: 15px;
+  display: flex;
+}
+
+.footer__icons img {
+  width: 32px;
+}
+
+.footer__copyright {
+  color: #fff;
+  padding-bottom: 5px;
+  font-family: Open Sans, sans-serif;
+}
+
+.footer__copyright a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer__copyright a:hover {
+  opacity: .5;
+  transition: opacity .3s;
+}
+/*# sourceMappingURL=music.1dedca8b.css.map */

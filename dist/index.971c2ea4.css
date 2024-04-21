@@ -1,0 +1,65 @@
+@import "https://fonts.googleapis.com/css2?family=Ultra&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Orelega+One&family=Tilt+Warp&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap";
+*, :before, :after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.home {
+  background-color: #75a39f;
+}
+
+.music {
+  background-color: #f5efe5;
+}
+
+.content {
+  background-color: #75a39f;
+  justify-content: center;
+  width: 100%;
+  margin: 25px auto 20px;
+  display: flex;
+}
+
+.content__frame {
+  background-color: #f5efe5;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  max-width: 45em;
+  height: auto;
+  margin-right: 10px;
+  padding: 25px;
+  display: flex;
+}
+
+.content__picture {
+  width: 100%;
+}
+
+.content__social {
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  margin-block-start: 15px;
+  display: flex;
+}
+
+.content__social a:hover {
+  opacity: .3;
+  transition: opacity .3s;
+}
+
+.content__social img {
+  width: 25px;
+}
+/*# sourceMappingURL=index.971c2ea4.css.map */

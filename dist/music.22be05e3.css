@@ -1,0 +1,104 @@
+@import "https://fonts.googleapis.com/css2?family=Ultra&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Orelega+One&family=Tilt+Warp&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap";
+*, :before, :after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.home {
+  background-color: #75a39f;
+}
+
+.music {
+  background-color: #f5efe5;
+}
+
+body {
+  background-color: #fff;
+}
+
+.content {
+  margin: 20px auto;
+  width: 100%;
+  margin-block-end: 100px;
+  padding: 15px;
+}
+
+@media (width <= 40em) {
+  .content {
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+  }
+}
+
+.content__grid {
+  width: fit-content;
+  margin: 0 auto;
+  display: grid;
+}
+
+@media (width < 40em) {
+  .content__grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 50px 1.75vw;
+  }
+}
+
+@media (width > 40em) and (width <= 48em) {
+  .content__grid {
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    gap: 50px 1.75vw;
+  }
+}
+
+@media (width > 48em) and (width <= 64em) {
+  .content__grid {
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    gap: 50px 1.75vw;
+  }
+}
+
+@media (width > 64em) and (width < 80em) {
+  .content__grid {
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    gap: 50px 1.75vw;
+  }
+}
+
+@media (width > 80em) {
+  .content__grid {
+    grid-template-columns: repeat(4, minmax(250px, 1fr));
+    gap: 50px 1.75vw;
+  }
+}
+
+.content__card {
+  color: #323232;
+  flex-direction: column;
+  align-items: center;
+  font-family: Open Sans, sans-serif;
+  display: flex;
+}
+
+.content__img {
+  width: 100%;
+}
+
+.content__caption {
+  vertical-align: middle;
+  text-align: center;
+  margin-top: 5px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+/*# sourceMappingURL=music.22be05e3.css.map */

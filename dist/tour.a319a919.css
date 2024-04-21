@@ -1,0 +1,84 @@
+@import "https://fonts.googleapis.com/css2?family=Ultra&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Orelega+One&family=Tilt+Warp&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap";
+*, :before, :after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.home {
+  background-color: #75a39f;
+}
+
+.music {
+  background-color: #f5efe5;
+}
+
+.content {
+  background-color: #fff;
+  width: 80%;
+  min-height: 100vh;
+  margin: 25px auto;
+}
+
+.content__titles {
+  border-bottom: 1px solid #323232;
+  margin-block-end: 30px;
+  font-family: Oswald, sans-serif;
+  font-size: 1.3rem;
+}
+
+.content .event {
+  border-bottom: 1px solid #d3d3d3;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  margin-block-end: 50px;
+  display: flex;
+}
+
+.content .event__info {
+  margin-block-end: 20px;
+  font-family: Open Sans, sans-serif;
+}
+
+.content .event__info p:first-child {
+  font-family: Oswald, sans-serif;
+  font-weight: 800;
+}
+
+.content .event__button {
+  color: #fff;
+  cursor: pointer;
+  background-color: #ff0081;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 30px;
+  font-family: Open Sans, sans-serif;
+  font-size: 1rem;
+  transition: transform .1s ease-in, box-shadow .25s ease-in;
+  box-shadow: 0 2px 25px #ff008280;
+}
+
+@media (width < 40em) {
+  .content__info {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content .videos__list iframe {
+    width: 315px;
+    height: 185px;
+  }
+}
+/*# sourceMappingURL=tour.a319a919.css.map */
