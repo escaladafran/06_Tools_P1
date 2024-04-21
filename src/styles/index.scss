@@ -1,0 +1,125 @@
+
+//FUENTES
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+//VARIABLES
+$title-font:"Ultra", serif;
+$menu-font:"Oswald", sans-serif;
+$text-font: "Open Sans", sans-serif;
+
+
+
+//COLORES
+$title-color:white;
+$back-color: #75A39F;
+$light-grey:#F5EFE5;
+$dark-grey:#323232;
+$medium-grey:#D3D3D3;
+
+
+$green:#85CE73;
+$orange:#F0E68C;
+$red:rgb(236, 79, 79);
+$magenta:#FF0081;
+
+
+
+
+//VARIABLES TAMAÑO Y MARGENES
+$content-width:80%;
+$paragraph-margin:10px;
+
+//BREAKPOINTS
+$phone:40em;
+$tablet:48em;
+$laptop:64em;
+$desktop:80em;
+
+//VARIABLES TAMAÑO textos
+$txt-huge:3rem;
+$txt-big:2.25rem;
+$txt-medium:2rem;
+$txt-regular:1.3rem;
+$txt-small:1rem;
+
+
+
+//RESET
+*,
+*:before,
+*:after{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    line-height: 1.6;
+    list-style: none;
+   
+}
+
+
+a{
+  text-decoration: none;
+}
+
+//MENU HAMBURGUESA
+
+.hamburguer-ct 
+{
+  cursor: pointer;
+  height: fit-content;
+  width: 60px;
+  transition: all .2s ease-out;
+}
+
+
+
+
+//COLORES DE FONDO
+.home{
+  background-color: $back-color;
+}
+
+.music{
+  background-color: $light-grey;
+}
+
+
+//MENU HAMBURGUESA
+
+.hamburguer-ct 
+{
+  cursor: pointer;
+  height: fit-content;
+  width: 60px;
+  transition: all .2s ease-out;
+}
+
+.hamburguer-ct 
+.hamburguer-ct-stripe {
+  width: 100%;
+  height: 10px;
+  background: $dark-grey;
+  margin: 4px auto;
+  transition: all 0.3s;
+  backface-visibility: hidden;
+  
+}
+
+.hamburguer-ct.on div:nth-child(1){ 
+    transform: rotate(45deg) translate(10px, 10px);
+    background: $title-color;
+}
+      
+ .hamburguer-ct.on div:nth-child(2)
+  {
+    opacity: 0;
+  }
+  
+  .hamburguer-ct.on div:nth-child(3)
+ {
+    transform: rotate(-45deg) translate(10px, -10px);
+    background: $title-color;
+  }
