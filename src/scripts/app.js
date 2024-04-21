@@ -7,7 +7,7 @@ hamMenu.addEventListener('click', ()=>{
 })
 
 
-const media = window.matchMedia('(width < 40em)')
+//const media = window.matchMedia('(width < 40em)')
 
 const navMenu = document.querySelector('.topnav__menu');
 const navBtn = document.querySelector('.topnav__open');

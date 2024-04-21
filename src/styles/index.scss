@@ -64,18 +64,6 @@ a{
   text-decoration: none;
 }
 
-//MENU HAMBURGUESA
-
-.hamburguer-ct 
-{
-  cursor: pointer;
-  height: fit-content;
-  width: 60px;
-  transition: all .2s ease-out;
-}
-
-
-
 
 //COLORES DE FONDO
 .home{
@@ -87,39 +75,3 @@ a{
 }
 
 
-//MENU HAMBURGUESA
-
-.hamburguer-ct 
-{
-  cursor: pointer;
-  height: fit-content;
-  width: 60px;
-  transition: all .2s ease-out;
-}
-
-.hamburguer-ct 
-.hamburguer-ct-stripe {
-  width: 100%;
-  height: 10px;
-  background: $dark-grey;
-  margin: 4px auto;
-  transition: all 0.3s;
-  backface-visibility: hidden;
-  
-}
-
-.hamburguer-ct.on div:nth-child(1){ 
-    transform: rotate(45deg) translate(10px, 10px);
-    background: $title-color;
-}
-      
- .hamburguer-ct.on div:nth-child(2)
-  {
-    opacity: 0;
-  }
-  
-  .hamburguer-ct.on div:nth-child(3)
- {
-    transform: rotate(-45deg) translate(10px, -10px);
-    background: $title-color;
-  }

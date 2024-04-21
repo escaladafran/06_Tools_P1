@@ -8,136 +8,6 @@ body{
 }
 
 
-.topnav{
-    width:100%;
-    display:flex;
-    margin:0 auto;
-    justify-content: space-around;
-    align-items: center;
-    margin-top:20px;
-    padding-block:1.5rem; 
-
-
-
-
-    @media (max-width:$phone ){
-       
-        display:flex;
-        justify-content:space-around;
-        align-items:center;
-        gap:20px;
-        padding-block:1.5rem;
-        margin-top:20px;
-      
-    }
-
-   
-    
-
-   
-
-    h1 a{ 
-        font-family: $title-font;
-        font-weight: 400;
-        font-style: normal;
-        font-size: $txt-big;
-        color:$dark-grey;
-        text-align: left;
-        width:fit-content;
-        font-size:$txt-big;
-        z-index: 10;
-    
-        @media(max-width:$phone){
-            font-size:$txt-medium;
-        }
-   
-    
-      @media(min-width:$tablet){
-        font-size: $txt-huge;
-      }
-    }
-
-    &__open{
-        z-index:10;
-        @media( width > $phone) {
-            display:none;
-        
-        }
-    }
-
-
-    &__menu{
-        font-family: $menu-font;
-        text-decoration: none;
-
-        @media (width < $phone){
-            background-color:  $dark-grey;
-            height: 100vh;
-            width: 100%;
-            position: fixed;
-            top: 0;
-            right: -100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;    
-            justify-content: flex-start;
-            text-align: center;
-            transition: .5s ease;
-        
-        }
-
-    }
-
-
-    &__links{
-        font-size: $txt-medium;
-        text-decoration: none;
-
-       
-
-        @media (width < $phone){    
-        font-size: $txt-huge;
-            color:$title-color;
-            margin-block-start: 8rem;
-        }
-
-        @media (width >=  $phone){    
-            color:$dark-grey;
-            display:flex;  
-           
-        
-        }
-    }
-
-    &__item{
-        padding:10px;
-        cursor:pointer;
-        transition: opacity 0.3s ease;
-        &:hover{
-           
-            opacity:50%;
-            transition: 2.5seg;
-        }
-    }
-
-  
-
-    &_menu,
-    &__active{
-        right:0;
-    
-    }
-
-
-    &__actual{
-        text-decoration: underline;
-    }
-
-
-
-    }
-
-
   
 .content{
     width:100%;
@@ -203,9 +73,11 @@ body{
     
 
     &__card{
- 
+        font-family: $text-font;
         display: flex;
         flex-direction: column;
+        align-items: center;
+        color:$dark-grey;
  
     }
 
@@ -215,7 +87,8 @@ body{
     }
 
     &__caption{
-        font-family: $text-font;
+        font-weight: 700;
+      
         font-size: $txt-small;
         vertical-align: middle;
         text-align: center;
@@ -232,83 +105,3 @@ body{
 
 
 
-
- //footer
- .footer{
-   
-    width: 100%;
-    background-color: $dark-grey;
-    height:90px;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    &__icons{
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        gap:15px;
-
-        height:100%;
-    
-       img{
-            width:32px ;
-        }
-    }
-
-    &__copyright{
-        color:white;
-        font-family: $text-font;
-        //padding-bottom: 5px;
-      
-
-    }
-
-    a{
-        color:white;
-     }
-
-     a:hover{
-         opacity:.5;
-        
-     }
-
-}
-
-//MENU HAMBURGUESA
-
-.hamburguer-ct 
-{
-  cursor: pointer;
-  height: fit-content;
-  width: 60px;
-  transition: all .2s ease-out;
-}
-
-.hamburguer-ct 
-.hamburguer-ct-stripe {
-  width: 100%;
-  height: 10px;
-  background: $dark-grey;
-  margin: 4px auto;
-  transition: all 0.3s;
-  backface-visibility: hidden;
-  
-}
-
-.hamburguer-ct.on div:nth-child(1){ 
-    transform: rotate(45deg) translate(10px, 10px);
-    background: $title-color;
-}
-      
- .hamburguer-ct.on div:nth-child(2)
-  {
-    opacity: 0;
-  }
-  
-  .hamburguer-ct.on div:nth-child(3)
- {
-    transform: rotate(-45deg) translate(10px, -10px);
-    background: $title-color;
-  }

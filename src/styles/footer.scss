@@ -1,0 +1,50 @@
+ 
+ @import "index.scss";
+ 
+ //footer
+ .footer{
+   
+    width: 100%;
+    background-color: $dark-grey;
+    height:95px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__icons{
+        padding-top:15px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        gap:15px;
+        margin-block-end: 10px;;
+       
+    
+    
+       img{
+            width:32px ;
+        }
+    }
+
+    &__copyright{
+        color:white;
+        font-family: $text-font;
+        padding-bottom: 5px;
+      
+        a{
+            color:white;
+            text-decoration: none;
+        }
+    
+         a:hover{
+             opacity:.5;
+             transition:opacity .3s ease;
+            
+         }
+    }
+
+
+    
+
+}

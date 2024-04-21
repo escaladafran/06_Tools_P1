@@ -1,10 +1,7 @@
+
 @import "index.scss";
-   
-
-
 
 .topnav{
-    width:100%;
     display:flex;
     margin:0 auto;
     justify-content: space-around;
@@ -12,8 +9,13 @@
     margin-top:20px;
     padding-block:1.5rem; 
 
+    @media(width >= $tablet){
+        width:$content-width;
+    }
 
-
+    @media(width < $tablet){
+        width:100%;
+    }
 
     @media (max-width:$phone ){
        
@@ -27,10 +29,6 @@
     }
 
    
-    
-
-   
-
     h1 a{ 
         font-family: $title-font;
         font-weight: 400;
@@ -78,7 +76,7 @@
             justify-content: flex-start;
             text-align: center;
             transition: .5s ease;
-        
+    
         }
 
     }
@@ -88,7 +86,21 @@
         font-size: $txt-medium;
         text-decoration: none;
 
+       #first-child{
+        color:$title-color;
+        font-family: $title-font;
+        border-bottom: 1px solid white;
+        margin-block-end: 40px;
        
+
+        @media( width > $phone) {
+            display:none;
+        
+        }
+
+
+
+       }
 
         @media (width < $phone){    
         font-size: $txt-huge;
@@ -107,12 +119,14 @@
     &__item{
         padding:10px;
         cursor:pointer;
-        transition: opacity 0.3s ease;
+       
+        
         &:hover{
-           
-            opacity:50%;
-            transition: 2.5seg;
+            opacity:.5;
+            transition:opacity .3s ease;
         }
+       
+        
     }
 
   
@@ -128,124 +142,82 @@
         text-decoration: underline;
     }
 
-
-
-    }
-
-
-
-
-
-.content{
-    width:$content-width;
-    margin:20px auto;
-    margin-top:25px;
-    background-color: $title-color;
-
+   
     
-    &__frame{
-        width:$content-width;
-        height:auto;
-        background-color: $light-grey;
-        display: flex;
+
+
+
+    .social{
+
+        display:flex;
         justify-content: center;
         align-items: center;
-        padding:15px;
-        max-width:65em;
-        margin:0 auto;
-        margin-block-end: 35px;
-    }
+        gap:15px;
 
-    &__picture{
-        width:100%;
-    }
-
-    &__about{
-        margin:0 auto;
-        font-family: $text-font;
-        margin-block-start: 20px;
-  
-       
-    }
-
-    &__titles{
-        border-bottom: 1px solid $dark-grey;
-        font-size: $txt-regular;
-        font-family: $menu-font;
-        
-    }
-
-    &__paragraph{
-        margin-bottom: $paragraph-margin;
-    }
-
-    //-------------------------------------------media queries
-    @media(width < $phone){
-
-        &{
-            width:80%;
-        }
-
-        &__info{
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            
-        }
-
-
-        .videos__list iframe{
-            width:315px;
-            height:185;
-
-        }
-
-
-       
-    }
-
+        height:100%;
     
-        @media( width > $phone) and (width <=$tablet){
-            &{
-                width:75%;
-            }
-
-            &__info{
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                
-            }
-          
+       img{
+            width:32px ;
         }
+    
+     
+         a:hover{
+             opacity:.5;
+             transition:opacity .3s ease;
+            
+         }
+
+        @media( width > $phone) {
+            display:none;
         
-        @media(width > $tablet) and (width <= $laptop) {
-            &{
-                width:70%;
-            }
-          
         }
 
-        @media(width > $laptop) and (width < $desktop){
-            &{
-                width:60%;
-            }
-        }
+    } 
 
-        @media(width > $desktop){
-            &{
-                width:50%;
-                
-            }
-       
-        }
 
-}//end content
-   
-   
-   
-   
-   
-   
-   
-   
+    }//end topnav--------------------------------------------------
+
+
+
+
+
+
+
+  
+
+
+//MENU HAMBURGUESA
+.hamburguer-ct 
+{
+  cursor: pointer;
+  height: fit-content;
+  width: 60px;
+  transition: all .2s ease-out;
+}
+
+.hamburguer-ct 
+.hamburguer-ct-stripe {
+  width: 100%;
+  height: 10px;
+  background: $dark-grey;
+  margin: 4px auto;
+  transition: all 0.3s;
+  backface-visibility: hidden;
+  
+}
+
+.hamburguer-ct.on div:nth-child(1){ 
+    transform: rotate(45deg) translate(10px, 10px);
+    background: $title-color;
+}
+      
+ .hamburguer-ct.on div:nth-child(2)
+  {
+    opacity: 0;
+  }
+  
+  .hamburguer-ct.on div:nth-child(3)
+ {
+    transform: rotate(-45deg) translate(10px, -10px);
+    background: $title-color;
+  }
